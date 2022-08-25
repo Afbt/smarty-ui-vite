@@ -3,4 +3,6 @@
 !commitlint.config.js
 .babel.config.js
 !.umirc.ts
- 
+node_modules
+vite.config.ts
+dist
