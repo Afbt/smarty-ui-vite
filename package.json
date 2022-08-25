@@ -1,0 +1,83 @@
+{
+  "name": "smarty-ui-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src",
+    "web-norm": "web-norm",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
+    "eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,js,tsx}\" --fix",
+    "commit": "git add . && git-cz"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "pre-push": "cd ../../ && npm run format",
+    "preserveUnused": [
+      "commit-msg"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@iconify-json/ic": "1.1.4",
+    "@testing-library/vue": "6.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.30.7",
+    "@vitejs/plugin-vue": "3.0.3",
+    "@vitejs/plugin-vue-jsx": "2.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "2.0.0",
+    "axios": "^0.27.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "happy-dom": "6.0.4",
+    "prettier": "^2.7.1",
+    "simple-git-hooks": "^2.8.0",
+    "typescript": "^4.7.4",
+    "unocss": "0.45.6",
+    "vite": "3.0.7",
+    "vitepress": "0.22.4",
+    "vitepress-theme-demoblock": "1.4.2",
+    "vitest": "0.22.1",
+    "web-norm": "^1.0.24",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "@commitlint/cz-commitlint": "^17.0.3"
+  },
+  "dependencies": {
+    "vue": "3.2.37"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,jsx,tsx}": [
+      "npm run eslint"
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
