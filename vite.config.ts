@@ -6,10 +6,12 @@ import Unocss from './config/unocss'
 const rollupOptions = {
   external: ['vue', 'vue-router'],
   output: {
-    assetFileNames: `assets/[name].css`,
     globals: {
       vue: 'Vue'
-    }
+    },
+    chunkFileNames: 'static/js/[name]-[hash].js',
+    entryFileNames: 'static/js/[name]-[hash].js',
+    assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
   }
 }
 // https://vitejs.dev/config/
