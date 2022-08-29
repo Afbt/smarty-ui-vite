@@ -1,5 +1,5 @@
 <template>
-  <button>SFC Button12</button>
+  <button>SFC Button123</button>
 </template>
 <script lang="ts">
 export default {
