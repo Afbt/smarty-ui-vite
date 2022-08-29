@@ -1,7 +1,7 @@
 import button from '../index'
-
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
+// import 'uno.css'
 // 测试分组
 describe('Button', () => {
   // mount
