@@ -8,10 +8,10 @@ const rollupOptions = {
   output: {
     globals: {
       vue: 'Vue'
-    },
-    chunkFileNames: 'static/js/[name]-[hash].js',
-    entryFileNames: 'static/js/[name]-[hash].js',
-    assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
+    }
+    // chunkFileNames: 'static/js/[name]-[hash].js',
+    // entryFileNames: 'static/js/[name]-[hash].js',
+    // assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
   }
 }
 // https://vitejs.dev/config/
