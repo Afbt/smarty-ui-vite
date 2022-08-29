@@ -6,6 +6,8 @@ on:
     branches: [main]
 jobs:
   Lint:
+    name: Lint
+    run: pnpm list
     # Lint任务
   UnitTest:
     # The type of runner that the job will run on
