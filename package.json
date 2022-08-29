@@ -17,7 +17,8 @@
     "pre-commit": "lint-staged",
     "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
     "eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,js,tsx}\" --fix",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "test:run": "vitest run"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
