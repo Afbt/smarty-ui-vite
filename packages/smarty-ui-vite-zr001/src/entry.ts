@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import MyButton from './button/button'
+import MyButton from './Button/button'
 import SFCButton from './SFCButton.vue'
 import JSXButton from './JSXButton'
 
