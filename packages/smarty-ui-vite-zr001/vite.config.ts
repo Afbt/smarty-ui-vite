@@ -37,6 +37,7 @@ export default defineConfig({
       fileName: 'smarty-ui',
       // 导出模块格式
       formats: ['es', 'esm', 'umd', 'iife']
-    }
+    },
+    outDir: './dist'
   }
 })

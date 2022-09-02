@@ -1,9 +1,8 @@
 // 读取 vite 配置
 import fs from 'fs-extra'
-import path from 'path'
-import { config } from '../vite.config'
+import * as path from 'path'
+import config from '../vite.config'
 import { build, InlineConfig, defineConfig, UserConfig } from 'vite'
-
 // 全量打包
 const buildAll = async () => {
   // const inline: InlineConfig =
